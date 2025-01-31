@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/bunnylogo.png">
+  <title>Valentines Invitation | V2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav><ul><li><img src="images/bunnylogo.png" alt=""></li>
+      <li><h1>I love you so much!!</h1></li></ul>
+      
+    </nav>
+  </header>
+
+  <section>
+    <div class="canvasArea">
+      <img src="images/asktransparent.gif" id="gifClickAndChange">
+      <img src="images/1.png" id="note">
+      <ul>
+        <li>
+            <button id="yes" onclick="window.location.href='next.html'"><img src="images/yesBut.png" ></button>
+        </li>
+        <li>
+            <button class="no" id="no" onclick="move()"><img src="images/noBut.png"></button>
+        </li>
+    </ul>
+    
+    <p id="tagPerson">-To Lovey</p>
+    </div>
+  </section>
+
+
+  <script>
+const yesbtn = document.getElementById("yes");
+const noBtn = document.getElementById("no");
+const tagPerson = document.getElementById("tagPerson");
+const heading = document.getElementById("head");
+const gifImage = document.getElementById("gifClickAndChange");
+
+
+yesbtn.addEventListener("click", fn);
+
+function move() {
+  var btn = document.getElementById("no");
+  var x = Math.floor(Math.random() * 100) + 1;
+  var y = Math.floor(Math.random() * 100) + 1;
+  btn.style.top = x + "px";
+  btn.style.left = y + "px";
+}
+
+
+  </script>
+</body>
+</html>

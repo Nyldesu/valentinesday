@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border-style: none;
+  list-style: none;
+}
+
+input {
+  color: transparent;
+  text-shadow: 0 0 0 #2196f3;
+
+  &:focus {
+      outline: none;
+  }
+}
+
+body{
+  min-height: 100vh;
+  background: url('images/bg.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  position: relative;
+  background-color: #fc4d4d;
+  width: 100%;
+  height: auto;
+  z-index: 3; /* Keep header on top */
+  display: flex;
+  
+  align-items: center;
+  padding: 10px 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+header img {
+  height: 30px;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 1.3rem;
+  color: #fee4e4;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+  margin: 0;
+}
+
+section{
+  justify-content: center;
+  margin-top: 10px;
+}
+
+section .canvasArea{
+  position: relative;
+  width: 350px;
+  height: 400px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  display: block;
+  margin: auto;
+  text-align: center;
+  border-radius: 20px;
+}
+
+section .canvasArea #note{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    filter: drop-shadow(5px 2px 5px #5c5c5c85);
+  }
+
+section .canvasArea #gifClickAndChange{
+  position:absolute;
+  height: 100px;
+  margin-left: 50px;
+}
+
+section .canvasArea p{
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    margin-right: 10px;
+    padding: 5px;
+    filter: drop-shadow(5px 2px 4px #000000);
+  }
+
+section .canvasArea button {
+  display: block;
+  position: relative;
+  
+  border-radius: 14px;
+  cursor: pointer;
+
+  filter: drop-shadow(5px 2px 5px #5959599d);
+  background: none;
+  transition: all ease 0.2s;
+}
+
+section .canvasArea button img{
+  width: 100px;
+  height: 100px;
+}
+
+section .canvasArea button:hover{
+  opacity: 0.4;
+  background-color: none;
+}
+
+section ul li{
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+section .canvasArea img{
+  padding: 5px;
+  height: 200px;
+  border-radius: 15px;
+}
